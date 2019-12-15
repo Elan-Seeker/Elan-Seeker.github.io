@@ -75,8 +75,6 @@ def ARMA(ts, p, q):
 	len_ts = np.size(ts)
 	# ensure the number of slices exceeds the least required number
 	assert len_ts - p - q >= 2, 'invalid time series.'
-	# ensure the number of data selected each season less than the season length
-	assert p + q < m, 'invalid parameters.'
 
 	X_ts = np.zeros((len_ts - p, p))
 	y_ts = np.zeros(len_ts - p)
