@@ -725,9 +725,9 @@ class CNN:
                 pos_out_y = 0
                 while pos_image_y + len_filter_y <= len_image_y:
                     out_matrix[i, pos_out_y, pos_out_x] = np.sum(cov_filter[i] * inp_image[:, pos_image_y: pos_image_y + len_filter_y, pos_image_x: pos_image_x + len_filter_x])
-                    pos_image_y += len_filter_y
+                    pos_image_y += stride
                     pos_out_y += 1
-                pos_image_x += len_filter_x
+                pos_image_x += stride
                 pos_out_x += 1
 
         return out_matrix
