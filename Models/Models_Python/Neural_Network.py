@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # construct the neural network class
 class NN:
 
