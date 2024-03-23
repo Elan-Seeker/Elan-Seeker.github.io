@@ -7,6 +7,7 @@
 using namespace std;
 using namespace nc;
 
+
 int main() {
 
 	cout << "Program begins." << endl;
